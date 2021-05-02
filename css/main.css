@@ -1,5 +1,9 @@
 html{
 	font-size: 16px;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 body {
 	align-items:center;
@@ -9,41 +13,55 @@ body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	justify-content: center;
 	max-width: 1200px;
-	width:90%;
+	padding-left: 20px;
+	/*padding left scoot the entire layout over to make both white spaces even.*/
+	padding-right: 20px;
 }
-.container{
+container{
 	align-items:center;
 	display: flex;
 	flex-flow:row wrap;
-	font-size: 1em;
 	justify-content: center;
 	max-width: 1200px;
-	margin: 0 auto;
 	width:90%;
 }
-h1{
-	 border-bottom:  3px solid #1E6F06;
-	 width: 1000px;
+hr{
+	background-color:#77a466; 
+	width: 100%;
+	padding-top: 2px;
+	position:relative;
+	top: 139px;
 }
-h1,
-h2,
-h3 {
+.h1{
+	 width: 90%;
+}
+h1{
 	color: black;
 	text-transform: uppercase;
-	font-weight: 700;
-}
-h1 {
-	font-size: 30px;
+	
+	align-content: center;
+	align-items: center;
+	display:flex;
+	justify-content: center;
+	
+	margin: 0;
+	padding-top: 63px;
+	font-size: 2.125em;
 }
 h2 {
-	font-size: 18px;
+	font-size: 1.125em;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700
 }
 h3 {
-	font-size: 12px;
+	font-size: 0.75em;
+	color: black;
+	text-transform: uppercase;
 }
 
 p {
-	font-size: 14px;
+	font-size: 0.875em;
 	line-height: 21px;
     padding: 0 30px;
 }
@@ -51,39 +69,41 @@ p {
 /*The widths are in a percentage!*/
 header {
 	align-items:center;
-	border-bottom: 3px solid #77a466;
 	display: flex;
-	flex-flow:row wrap;
-	font-size: 1em;
+	flex-flow: row wrap;
+	font-size: 1em; /*put spaces b/w nav names when its cellphone size*/
 	/*height: 110px*/;
 	justify-content: center;
 	margin: 0 auto;
 	max-width:1200px;
-	width:90%;
+	width: 100%;
 }
-
-header h1 {
-	/*float: left;*/
-	margin: 0;
-	padding: 38px 0;
-}
-header h1 span {
+header span{
+	align-items: center;
+	display:flex;
+	justify-content: center;
 	color: #77a466;
+	
+	font-size: 1em;
+	padding: 0 9px;
+	padding-right: 10px;
 }
-
-header nav {
+nav {
 	/*float: right;*/
-	padding: 46px 0;
+	padding: 46px 10px;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
+	font-size: 1em;
+	padding: 15px 10px;
 	display: inline;
 }
 header nav ul li a{
@@ -112,7 +132,8 @@ header nav ul li a{
 }
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 2px solid #77a466;
+	border-top:  2px solid #77a466; 
 }
 
 .main-title {
@@ -120,13 +141,14 @@ header nav ul li a{
 	/*float: left;*/
 }
 .main-title h2 {
+	font-size: 88%;
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 25px;
 }
 .bottom-section{
@@ -139,28 +161,34 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 93%;
 	height: auto;
 	/*float: left;*/
 	border-top: 1px solid #eee;
+	
 }
-
-.section-one h3 {
+section-one h3 {
 	padding: 10px 0;
 }
-
-.section-two h3{
+/*I notice that the padding had a lot to do with how far the title was away or close to the edge of the edge of the screen.*/
+section-two h3{
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-	padding: 10px 30px;
+	font-size: 0.875em;
+	padding: 10px 0;
 }
-.section-three h3 {
-	padding: 10px 30px;
+.section-two p{
+	font-size: 0.813em;
+	padding: 10px 0;
+}
+section-three h3 {
+	font-size: 0.875em;
+	padding: 10px;
+}
+.section-three p{
+	padding: 10px 0;
 }
 .section-one{
-	height: 246px;
-}
-.section-three{
 	height: 247px;
 }
 .menu {
@@ -174,12 +202,12 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 21px;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 }
 
@@ -192,7 +220,7 @@ footer {
 	flex-flow:row wrap;
 	font-size: 1em;
 	height: 50px;
-	just-content:center;
+	justify-content:center;
 	margin: 0 auto;
 	max-width:1200px;
 	text-align: center;
@@ -202,6 +230,81 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: 0.875em;
 
 }
+
+
+/*------TABLET-----*/
+@media all and (min-width: 768px) and (max-width: 768px){
+/*768 and higher*/
+
+.h1{
+	/*float: left;*/
+	margin: 0;
+	padding: 38px 76px;
+	font-size: 24px;
+	padding-right: 105px;
+}		
+container span{
+	padding: 2px;
+	color: #77a466;
+	font-size: 24px;
+	padding-right: 10px;
+}	
+header nav ul li a{
+	color: #77a466;
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	padding: 6px;
+}
+.main-title h2{
+	font-size: 16px;	
+}	
+.main-title p{
+	font-size: 14px;	
+}		
+.bottom-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}	
+.bottom-section h3{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-right: 34px;
+}
+	
+.section-one, h3{
+	display: flex;
+	flex-direction: row;	
+	justify-content: center;
+	padding-right: 34px;	
+	font-size: 14px;
+}
+.section-two, h3{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-right: 34px;	
+}
+.section-three, h3{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-right: 34px;	
+}		
+.li{
+	font-size: 15px;
+	word-spacing: 12px;
+	display: inline;
+	color: #77a466;
+}
+reviews{
+	font-size: 12px;	
+ }	
+
+	
+
