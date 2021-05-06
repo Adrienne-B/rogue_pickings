@@ -2,57 +2,50 @@ html{
 	font-size: 16px;
 	width: 100%;
     margin: 0;
+	overflow-x: hidden;
     padding: 0;
-    overflow-x: hidden;
 }
 body {
 	align-items:center;
 	display: flex;
 	flex-flow:row wrap;
+	font-family: 'Montserrat', 'Helvetica, Arial', 'sans-serif';
 	font-size: 1em;
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	justify-content: center;
 	max-width: 1200px;
 	padding-left: 20px;
 	/*padding left scoot the entire layout over to make both white spaces even.*/
 	padding-right: 20px;
 }
-container{
-	align-items:center;
-	display: flex;
-	flex-flow:row wrap;
-	justify-content: center;
+.container{
 	max-width: 1200px;
 	width:90%;
 }
 hr{
 	background-color:#77a466; 
-	width: 100%;
 	padding-top: 2px;
 	position:relative;
 	top: 139px;
-}
-.h1{
-	 width: 90%;
+	width: 100%;
 }
 h1{
-	color: black;
-	text-transform: uppercase;
-	
 	align-content: center;
 	align-items: center;
 	display:flex;
+	color: black;
+	font-size: 2.125em;
 	justify-content: center;
-	
 	margin: 0;
 	padding-top: 63px;
-	font-size: 2.125em;
+	text-transform: uppercase;
+	width: 90%;
 }
 h2 {
 	font-size: 1.125em;
+	font-weight: 700;
 	color: black;
 	text-transform: uppercase;
-	font-weight: 700
+	font-weight: 700;
 }
 h3 {
 	font-size: 0.75em;
@@ -78,15 +71,15 @@ header {
 	max-width:1200px;
 	width: 100%;
 }
-header span{
+.header, span{
 	align-items: center;
-	display:flex;
 	justify-content: center;
 	color: #77a466;
-	
+	display:flex;
 	font-size: 1em;
+	justify-content: center;
 	padding: 0 9px;
-	padding-right: 10px;
+	padding-right: 9px;
 }
 nav {
 	/*float: right;*/
@@ -112,7 +105,17 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
-.top-section,
+.top-section{
+	align-items:center;
+	clear: both;
+	display:flex;
+	flex-flow:row wrap;
+	font-size: 1em;
+	justify-content: center;
+	margin: 0 auto;
+	max-width:1200px;
+	width:90%;
+}
 .bottom-section {
 	align-items:center;
 	clear: both;
@@ -167,11 +170,11 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 	
 }
-section-one h3 {
+.section-one h3 {
 	padding: 10px 0;
 }
 /*I notice that the padding had a lot to do with how far the title was away or close to the edge of the edge of the screen.*/
-section-two h3{
+.section-two h3{
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 	font-size: 0.875em;
@@ -181,7 +184,7 @@ section-two h3{
 	font-size: 0.813em;
 	padding: 10px 0;
 }
-section-three h3 {
+.section-three h3 {
 	font-size: 0.875em;
 	padding: 10px;
 }
@@ -231,80 +234,143 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
-
+ }
 }
 
+/*------------TABLET-------------*/
 
-/*------TABLET-----*/
-@media all and (min-width: 768px) and (max-width: 768px){
-/*768 and higher*/
+@media all and (min-width: 768px){
 
-.h1{
-	/*float: left;*/
+ h1{
+	font-size: 26px;
+}
+header, span{
+	font-size: 26px;
+	padding-left: 3px;
+	
+}
+nav{
+	/*float: right;*/
+	padding: 46px 10px;
+}
+header nav ul {
 	margin: 0;
-	padding: 38px 76px;
-	font-size: 24px;
-	padding-right: 105px;
-}		
-container span{
-	padding: 2px;
-	color: #77a466;
-	font-size: 24px;
-	padding-right: 10px;
-}	
-header nav ul li a{
-	color: #77a466;
-	display: flex;
-	flex-direction: row;
-	font-size: 14px;
-	padding: 6px;
+	padding: 0;
 }
-.main-title h2{
-	font-size: 16px;	
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 15px 10px;
+	display: inline;
 }	
 .main-title p{
-	font-size: 14px;	
-}		
+font-size: 13px;		
+}
 .bottom-section{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	flex-wrap: nowrap;
 }	
-.bottom-section h3{
+.section-one h3, 
+.section-two h3, 
+.section-three h3{
+	align-items: center;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	padding-right: 34px;
+}
+.section-three h3{
+	padding-bottom: 38px;	
+}
+.section-three p{
+	padding-top: 23px;	
+}	
+footer, h3 {
+	align-items: center;
+	border-top: 3px solid #eee;
+	clear: both;
+	display:flex;
+	flex-flow:row wrap;
+	font-size: 1em;
+	height: 50px;
+	justify-content:center;
+	margin: 0 auto;
+	max-width:1200px;
+	text-align: center;
+	width:90%;
+ }
 }
 	
-.section-one, h3{
-	display: flex;
-	flex-direction: row;	
-	justify-content: center;
-	padding-right: 34px;	
+/*------------DESKTOP-------------*/
+
+@media all and (min-width: 1200px){
+
+.container header h1{
+	padding-left: -600px;
+	font-size: 27px;
+	position: relative;
+	text-align: justify;
+	top: 80px;
+}
+.container header span{
+	font-size: 27px;
+}	
+.container header h1{
+	  position: relative;
+}	
+header h1{
+	padding-right: 725px;
+}	
+hr{		
+    display: none;
+}
+nav {
+	/*float: right;*/
+	padding: 46px 10px;
+	flex-wrap: wrap;
+	padding-left: 43px;
+	justify-content: space-between;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	flex-direction: row;
+	padding-left: 429px;
+	justify-content: space-between;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
 	font-size: 14px;
+	justify-content: space-between;
+	flex-direction: row;
 }
-.section-two, h3{
+.bottom-section,
+.section-one h3, 
+.section-two h3, 
+.section-three h3{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	padding-right: 34px;	
+	flex-wrap: nowrap;
+	font-size: 13px;
+	width: 90%;
+}	
+footer h3{
+	align-items: center;
+	border-top: 3px solid #eee;
+	clear: both;
+	display:flex;
+	flex-flow:row wrap;
+	font-size: 1em;
+	height: 50px;
+	justify-content:center;
+	margin: 0 auto;
+	max-width:1200px;
+	text-align: center;
+	width:90%;	
 }
-.section-three, h3{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-right: 34px;	
-}		
-.li{
-	font-size: 15px;
-	word-spacing: 12px;
-	display: inline;
-	color: #77a466;
+.container span{
+	top: 5px;
+	font-size: 23px;
+}	
 }
-reviews{
-	font-size: 12px;	
- }	
-
-	
-
