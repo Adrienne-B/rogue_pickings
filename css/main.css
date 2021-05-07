@@ -235,8 +235,6 @@ footer span {
 	color: #77a466;
 	font-size: 0.875em;
  }
-}
-
 /*------------TABLET-------------*/
 
 @media all and (min-width: 768px){
@@ -305,6 +303,11 @@ footer, h3 {
 
 @media all and (min-width: 1200px){
 
+body{
+	width: 100%;
+    margin: 0;
+    padding: 90px;	
+}
 .container header h1{
 	padding-left: -600px;
 	font-size: 27px;
