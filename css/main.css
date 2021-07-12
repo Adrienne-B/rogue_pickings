@@ -104,7 +104,8 @@ header nav ul li a{
 	color:#77a466;
 }
 
-/*The widths are in a percentage!*/
+/******END OF HEADER******/
+
 .top-section{
 	align-items:center;
 	clear: both;
@@ -116,6 +117,42 @@ header nav ul li a{
 	max-width:1200px;
 	width:90%;
 }
+
+.main-image {
+	height: auto;
+	/*float: left;*/
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 2px solid #77a466;
+	border-top:  2px solid #77a466; 
+}
+
+.main-title {
+	height: auto;
+	/*float: left;*/
+}
+
+.main-title h2 {
+	font-size: 88%;
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+
+.main-title p {
+	padding: 0;
+	font-size: 13px;
+	line-height: 25px;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 95%;
+}
+
+/******HERO_AREA SECTION/ Ends here******/
+
+
 .bottom-section {
 	align-items:center;
 	clear: both;
@@ -129,89 +166,102 @@ header nav ul li a{
 
 }
 
-.main-image {
-	height: auto;
-	/*float: left;*/
-}
-.main-image img {
-	width: 100%;
-	border-bottom: 2px solid #77a466;
-	border-top:  2px solid #77a466; 
-}
-
-.main-title {
-	height: auto;
-	/*float: left;*/
-}
-.main-title h2 {
-	font-size: 88%;
-	text-align: left;
-	padding: 5px 0;
-	color: #77a466;
-}
-.main-title p {
-	padding: 0;
-	font-size: 13px;
-	line-height: 25px;
-}
 .bottom-section{
 	display: flex;
-	align-content: center;
+	/*align-content: center;*/
 }
-.reviews{
-	font-size: 12px;
-}
-.section-one,
-.section-two,
-.section-three {
-	width: 93%;
-	height: auto;
+
+.section-one {
 	/*float: left;*/
 	border-top: 1px solid #eee;
-	
+	height: auto;
+	width: 63%;
 }
+
 .section-one h3 {
 	padding: 10px 0;
+	padding-left: 3rem;
 }
+
+.menu p {
+	color:#77a466;
+	font-size: 1.2rem;
+	padding: 4px 0;
+	padding-left: 3rem;
+}
+
+.section-two {
+	border-top: 1px solid #eee;
+	height: 12.7rem;
+	/*float: left;*/
+	width: 59%;
+}
+
+
+
+
+.reviews  {
+	font-size: 1.0rem;
+	padding-left: 0.1rem;
+	padding-right: 2rem;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 130%;
+}
+
+/*.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}*/
+
+
+.section-three {
+	border-top: 1px solid #eee;
+	height: 12.6rem;
+	/*float: left;*/
+	width: 43%;
+	
+}
+
 /*I notice that the padding had a lot to do with how far the title was away or close to the edge of the edge of the screen.*/
-.section-two h3{
+.section-two h3 {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 	font-size: 0.875em;
 	padding: 10px 0;
 }
-.section-two p{
-	font-size: 0.813em;
-	padding: 10px 0;
-}
+
 .section-three h3 {
 	font-size: 0.875em;
+	margin-top: 3rem;
+	padding-left: 4.1rem;
 	padding: 10px;
 }
+
+/*
 .section-three p{
-	padding: 10px 0;
-}
-.section-one{
+	padding-top: -23rem;
+}*/
+/*.section-one{
 	height: 247px;
-}
+}*/
+/*
 .menu {
 	list-style: none;
 	padding: 0;
-}
-.menu li {
-	padding: 10px 0;
-	color:#77a466;
-}
+}*/
 
-.reviews {
-	color: #333;
-	font-size: 1em;
-	line-height: 21px;
-}
 
-.address {
-	font-size: 1em;
-	line-height: 24px;
+
+
+.address p {
+	font-size: 1.0em;
+	line-height: 2rem;
+	padding-right: 3rem;;
+	padding-top: 0.1rem;
+	word-wrap: break-word;
+	width: 34rem;
 }
 
 /*The widths are in a percentage!*/
@@ -229,13 +279,14 @@ footer {
 	text-align: center;
 	width:90%;
 }
+
 footer span {
-	font-family: 'Galada', cursive;
-	text-transform: lowercase;
 	color: #77a466;
+	font-family: 'Galada', cursive;
 	font-size: 0.875em;
+	text-transform: lowercase;
+
  }
-}
 
 /*------------TABLET-------------*/
 
@@ -257,34 +308,158 @@ header nav ul {
 	margin: 0;
 	padding: 0;
 }
+	
 header nav ul li {
-	text-transform: uppercase;
+	display: inline;
 	font-weight: 700;
 	font-size: 16px;
 	padding: 15px 10px;
-	display: inline;
-}	
-.main-title p{
-font-size: 13px;		
+	text-transform: uppercase;	
 }
+	
+.top-section {
+	align-items:center;
+	clear: both;
+	display:flex;
+	flex-flow:row wrap;
+	font-size: 1em;
+	justify-content: center;
+	margin: 0 auto;
+	max-width:1200px;
+	width:90%;
+}
+
+.main-image {
+	height: auto;
+	/*float: left;*/
+}
+
+.main-image img {
+	border-bottom: 2px solid #77a466;
+	border-top:  2px solid #77a466; 
+	width: 100%;
+}
+
+.main-title {
+	height: auto;
+	/*float: left;*/
+}
+
+.main-title h2 {
+	color: #77a466;
+	font-size: 1.3rem;
+	text-align: left;
+	padding: 5px 0;
+	word-wrap: break-word;
+	width: 72%;
+}
+
+.main-title p {
+	font-size: 1.2rem;
+	line-height: 25px;
+	padding: 0;
+}
+
+/******HERO_AREA SECTION/ Ends here******/
+
+
+.bottom-section {
+	align-items:center;
+	clear: both;
+	display:flex;
+	flex-flow:row wrap;
+	font-size: 1em;
+	justify-content: center;
+	margin: 0 auto;
+	max-width:1200px;
+	width:90%;
+
+}
+
 .bottom-section{
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}	
-.section-one h3, 
-.section-two h3, 
-.section-three h3{
-	align-items: center;
-	display: flex;
-	flex-direction: row;
+	/*align-content: center;*/
 }
-.section-three h3{
-	padding-bottom: 38px;	
+
+.section-one {
+	/*float: left;*/
+	border-top: 1px solid #eee;
+	height: auto;
+	width: 63%;
 }
-.section-three p{
-	padding-top: 23px;	
+
+.section-one h3 {
+	padding: 10px 0;
+	padding-left: -2rem;
+}
+
+.menu p {
+	color:#77a466;
+	padding: 4px 0;
+	padding-left: 3rem;
+}
+
+
+/***End of menu**/
+
+.section-two {
+	border-top: 1px solid #eee;
+	height: 12.7rem;
+	/*float: left;*/
+	width: 59%;
+}
+
+.section-two h3 {
+	font-size: 1.0rem;	
+}
+	
+.section-two p  {
+	font-size: 1.2rem;
+	padding-left: 2.3rem;
+	padding-right: 5rem;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 86%;
+}
+
+/*.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}*/
+
+.section-three h3 {
+	font-size: 1.0rem;	
 }	
+	
+
+.section-three {
+	border-top: 1px solid #eee;
+	height: 12.6rem;
+	/*float: left;*/
+	width: 43%;
+	
+}
+
+/*I notice that the padding had a lot to do with how far the title was away or close to the edge of the edge of the screen.*/
+.section-one, .section-two, .section-three  {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.section-three h3 {
+	font-size: 1.0em;
+	padding: 10px;
+}
+
+.address p {
+	font-size: 1em;
+	line-height: 24px;
+	padding-top: 0.1rem;
+}
+	
 footer, h3 {
 	align-items: center;
 	border-top: 3px solid #eee;
@@ -304,9 +479,15 @@ footer, h3 {
 /*------------DESKTOP-------------*/
 
 @media all and (min-width: 1200px){
+	
 
+body{
+	width: 100%;
+    margin: 0;
+    padding: 90px;	
+}
 .container header h1{
-	padding-left: -600px;
+	padding-right: 52rem;
 	font-size: 27px;
 	position: relative;
 	text-align: justify;
@@ -328,7 +509,7 @@ nav {
 	/*float: right;*/
 	padding: 46px 10px;
 	flex-wrap: wrap;
-	padding-left: 43px;
+	padding-right: 5rem;
 	justify-content: space-between;
 }
 header nav ul {
@@ -345,16 +526,92 @@ header nav ul li {
 	justify-content: space-between;
 	flex-direction: row;
 }
-.bottom-section,
-.section-one h3, 
-.section-two h3, 
-.section-three h3{
+	
+.top-section {
+	padding-right: 43rem;	
+}
+	
+.bottom-section {
+	align-items:center;
+	clear: both;
+	display:flex;
+	flex-flow:row wrap;
+	font-size: 1em;
+	justify-content: center;
+	margin-right: 37rem;
+	/*margin: 0 auto;*/
+	max-width:1200px;
+	width:90%;
+
+}
+
+.bottom-section{
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	font-size: 13px;
-	width: 90%;
+	/*align-content: center;*/
+}
+
+.section-one {
+	/*float: left;*/
+	border-top: 1px solid #eee;
+	height: 13rem;;
+	width: 28%;
+}
+	
+.section-one p{
+	font-size: 1.0rem;
+	line-height: 1.0rem;
+}
+	
+.section-two {
+	border-top: 1px solid #eee;
+	height: 12.9rem;
+	/*float: left;*/
+	width: 29%;
+}
+	
+.section-two p  {
+	font-size: 0.7rem;
+	padding-left: 2.3rem;
+	padding-right: 5rem;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 86%;
 }	
+
+.section-two h3 {
+	font-size: 1.0rem;	
+}
+	
+
+
+/*.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}*/
+	
+.section-three {
+	border-top: 1px solid #eee;
+	height: 18.6rem;
+	/*float: left;*/
+	width: 27%;
+	
+}	
+
+.section-three h3 {
+	font-size: 1.0rem;	
+}	
+	
+
+
+.address p {
+	font-size: 1em;
+	line-height: 24px;
+	padding-top: 0.1rem;
+}	
+	
+	
+	
 footer h3{
 	align-items: center;
 	border-top: 3px solid #eee;
