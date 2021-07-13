@@ -14,15 +14,13 @@ fictional businesss offers regarding fresh and organic foods.
 Adobe Dreamweaver (text-editor)
 
 #### What I learn:
-Since I had past experience on the basics of HTML and CSS, that was more of a breeze. But, the challenge was fusing flexbox and media queries in order to create three different layouts to be cohesive to
-the device used 
+Since I had past experience on the basics of HTML and CSS, that was more of a breeze. But, the challenge was using flexbox and media queries in order to create three different layouts to be cohesive to the device used 
 
 ##### Challenges to improve on
-1. I didn't understand the the importance of creating multiple classes/id's and how to use them
-2. I didnt know how to take certain selectors and articles in css in order to create a certain style
+1. I still didn't understand the the importance of creating multiple classes/id's and how to use them
+2. I still didnt know how to take certain selectors and articles in css in order to create a certain style
 3. Flexbox is a challenge which I need to work on more.
 4. Margins and Paddings
-5. Lining up the gray lines so that each column of information at the same height and similar width
 
 ##### Solutions/solving the issue:
 1. Months later I went back to look at past mistakes. I noticed that I used too high of a number for margins and paddings to move elements in certain locations
