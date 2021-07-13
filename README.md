@@ -1,4 +1,4 @@
-                                                           # 206-rogue_pickings-206starter
+# 206-rogue_pickings-206starter
 
 # Summary 
 This project was all about making a static website responsive. By doing this I had to to incoroporate breaking points and media queries for all three devices :mobile, tablet, and desktop.
