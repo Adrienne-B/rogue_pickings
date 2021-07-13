@@ -247,17 +247,23 @@ header nav ul li a{
 
 /*
 .section-three p{
+<<<<<<< HEAD
 	padding-top: -23rem;
 }*/
 /*.section-one{
 	height: 247px;
 }*/
 /*
+=======
+	padding: 10px 0;
+}
+>>>>>>> 9f93b47e00d28fd7fd696a5d00e74d832aadb3c0
 .menu {
 	list-style: none;
 	padding: 0;
 }*/
 
+<<<<<<< HEAD
 
 
 
@@ -268,6 +274,15 @@ header nav ul li a{
 	padding-top: 0.1rem;
 	word-wrap: break-word;
 	width: 34rem;
+=======
+.reviews {
+	color: #333;
+	font-size: 1em;
+}
+
+.address {
+	font-size: 1em;
+>>>>>>> 9f93b47e00d28fd7fd696a5d00e74d832aadb3c0
 }
 
 /*The widths are in a percentage!*/
@@ -293,7 +308,10 @@ footer span {
 	text-transform: lowercase;
 
  }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9f93b47e00d28fd7fd696a5d00e74d832aadb3c0
 /*------------TABLET-------------*/
 
 @media all and (min-width: 768px){
@@ -384,6 +402,7 @@ header nav ul li {
 
 .bottom-section{
 	display: flex;
+<<<<<<< HEAD
 	/*align-content: center;*/
 }
 
@@ -436,6 +455,23 @@ header nav ul li {
 
 .section-three h3 {
 	font-size: 1.0rem;	
+=======
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 34px;
+}	
+.section-one h3, 
+.section-two h3, 
+.section-three h3{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	margin: 0px;
+	padding: 0px;
+}
+.section-three p{
+	padding-bottom: 8px;	
+>>>>>>> 9f93b47e00d28fd7fd696a5d00e74d832aadb3c0
 }	
 	
 
@@ -476,7 +512,6 @@ footer, h3 {
 	height: 50px;
 	justify-content:center;
 	margin: 0 auto;
-	max-width:1200px;
 	text-align: center;
 	width:90%;
  }
@@ -564,6 +599,7 @@ header nav ul li {
 
 .bottom-section{
 	display: flex;
+<<<<<<< HEAD
 	/*align-content: center;*/
 }
 
@@ -593,6 +629,12 @@ header nav ul li {
 	text-align: justify;
 	word-wrap: break-word;
 	width: 86%;
+=======
+	flex-direction: row;
+	flex-wrap: nowrap;
+	font-size: 13px;
+
+>>>>>>> 9f93b47e00d28fd7fd696a5d00e74d832aadb3c0
 }	
 
 .section-two h3 {
@@ -631,17 +673,15 @@ header nav ul li {
 	
 footer h3{
 	align-items: center;
-	border-top: 3px solid #eee;
 	clear: both;
 	display:flex;
 	flex-flow:row wrap;
 	font-size: 1em;
-	height: 50px;
+	height: 45px;
 	justify-content:center;
 	margin: 0 auto;
-	max-width:1200px;
 	text-align: center;
-	width:90%;	
+	border-top: none;
 }
 .container span{
 	top: 5px;
