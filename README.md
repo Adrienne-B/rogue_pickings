@@ -1,21 +1,22 @@
 # Rogue_Pickings
 
 # Summary 
-This project was all about making a static website responsive. By doing this I had to to incoroporate breaking points and media queries for all three devices :mobile, tablet, and desktop.
-Although there are muliple tabs in the navigation bar, the focus was on the layout not necessarily the function of this website.
+This project was all about making a static website responsive. By doing this, I had to incorporate breaking points and media queries 
+for all three devices: mobile, tablet, and desktop. Although there are multiple tabs in the navigation bar, the focus was on the
+layout, not necessarily the function of this website.
 
 ### Description/ walk-through
 This website was very simplistic regarding the color theme. Looking at the overall website
-you will see the business name/logo, the navigtion with multiple tabs, one image, welcoming intro, 
-a paragraph underneath, and  three sections side by side of  more in detail about what the 
-fictional businesss offers regarding fresh and organic foods.
+you will see the business name/logo, the navigation with multiple tabs, one image,
+welcoming intro, a paragraph underneath, and  three sections side by side of  
+more in detail about what the the fictional business offers regarding 
+fresh and organic foods.
 
 #### Software used:
 Adobe Dreamweaver (text-editor)
 
 #### What I learn:
-Since I had past experience on the basics of HTML and CSS, that was more of a breeze. But, the challenge was using flexbox and media queries in order to create three different layouts to be cohesive to the device used 
-
+Since I had experience with the basics of HTML and CSS, that was more of a breeze. But, the challenge was using flexbox and media queries to create three different layouts to be cohesive to the device used 
 ##### Challenges to improve on
 1. I still didn't understand the the importance of creating multiple classes/id's and how to use them
 2. I still didnt know how to take certain selectors and articles in css in order to create a certain style
