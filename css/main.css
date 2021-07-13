@@ -17,6 +17,12 @@ body {
 	/*padding left scoot the entire layout over to make both white spaces even.*/
 	padding-right: 20px;
 }
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
 .container{
 	max-width: 1200px;
 	width:90%;
@@ -487,7 +493,7 @@ body{
     padding: 90px;	
 }
 .container header h1{
-	padding-right: 52rem;
+	padding-right: 53rem;
 	font-size: 27px;
 	position: relative;
 	text-align: justify;
@@ -495,19 +501,21 @@ body{
 }
 .container header span{
 	font-size: 27px;
+
 }	
 .container header h1{
 	  position: relative;
 }	
 header h1{
-	padding-right: 725px;
+	padding-right: 43rem;
 }	
 hr{		
     display: none;
 }
 nav {
 	/*float: right;*/
-	padding: 46px 10px;
+	padding: 3rem;
+	margin-left: -9rem;
 	flex-wrap: wrap;
 	padding-right: 5rem;
 	justify-content: space-between;
@@ -519,6 +527,7 @@ header nav ul {
 	padding-left: 429px;
 	justify-content: space-between;
 }
+	
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -527,9 +536,17 @@ header nav ul li {
 	flex-direction: row;
 }
 	
+.main-image, figure image{
+	margin-left: -4rem;
+	width: 105%;	
+}	
+	
 .top-section {
 	padding-right: 43rem;	
 }
+	
+
+	/****End of nav***/
 	
 .bottom-section {
 	align-items:center;
@@ -554,7 +571,7 @@ header nav ul li {
 	/*float: left;*/
 	border-top: 1px solid #eee;
 	height: 13rem;;
-	width: 28%;
+	width: 33%;
 }
 	
 .section-one p{
@@ -566,7 +583,7 @@ header nav ul li {
 	border-top: 1px solid #eee;
 	height: 12.9rem;
 	/*float: left;*/
-	width: 29%;
+	width: 33%;
 }
 	
 .section-two p  {
